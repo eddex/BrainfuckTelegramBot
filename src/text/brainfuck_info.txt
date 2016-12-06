@@ -1,0 +1,8 @@
+> increment pointer
+< decrement pointer
++ increment value at pointer
+- decrement value at pointer
+[ begin loop (continues while value at pointer is non-zero)
+] end loop
+, read one character from input into value at pointer
+. print value at pointer to output as a character

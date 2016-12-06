@@ -1,0 +1,7 @@
+# BrainfuckRobot
+Send me some brainfuck code and I will send you the output.
+
+/help: Display this message.
+/brainfuck: Get basic info on how brainfuck works.
+/minify: Minify brainfuck code that contains comments.
+/run: Execute your brainfuck code. E.g.: /run ++++.--.

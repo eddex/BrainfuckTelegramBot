@@ -1,0 +1,26 @@
+{
+  "name": "BrainfuckTelegramBot",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eddex/BrainfuckTelegramBot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "brainfuck"
+  ],
+  "author": "eddex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eddex/BrainfuckTelegramBot/issues"
+  },
+  "dependencies": {
+    "telebot": "^1.0.6"
+  }
+}
