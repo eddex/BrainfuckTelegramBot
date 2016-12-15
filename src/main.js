@@ -4,13 +4,14 @@ console.log("#############################");
 console.log("Brainfuck Telegram Bot Server");
 console.log("#############################\n");
 
-const TeleBot = require('telebot');
-var fs = require('fs');
+const teleBot = require('teleBot');
+const brainfuck = require('brainfuck-javascript');
+const fs = require('fs');
 
 // load Telegram bot token from file and create bot
 var token = fs.readFileSync('telegram_token.secret').toString().replace(/\n$/, '');
 console.log('------ Secret Token: [' + token + "]");
-const bot = new TeleBot(token);
+const bot = new teleBot(token);
 
 /*
 * Handles the /start command.
@@ -62,13 +63,24 @@ bot.on('/minify', msg => {
 
 /*
 * Handles the /run command.
-* Parses the brainfuck code and returns the output to the user.
+* Parses the brainfuck code and returns the output to the user as ASCII characters.
 */
 bot.on('/run', msg => {
   let fromId = msg.from.id;
   let brainfuckCode = minify(msg.text);
-  // TODO: implement a lot of stuff.
-  return bot.sendMessage(fromId, `hurr durr. parsed code: ${ brainfuckCode }`);
+  let text = brainfuck.text(brainfuckCode);
+  return bot.sendMessage(fromId, text);
+});
+
+/*
+* Handles the /debug command.
+* Parses the brainfuck code and returns the output to the user as decimal numbers.
+*/
+bot.on('/debug', msg => {
+  let fromId = msg.from.id;
+  let brainfuckCode = minify(msg.text);
+  let data = brainfuck(brainfuckCode);
+  return bot.sendMessage(fromId, data.toString());
 });
 
 /*

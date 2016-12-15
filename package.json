@@ -21,6 +21,7 @@
     "url": "https://github.com/eddex/BrainfuckTelegramBot/issues"
   },
   "dependencies": {
+    "brainfuck-javascript": "^0.1.7",
     "telebot": "^1.0.6"
   }
 }
