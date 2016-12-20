@@ -14,4 +14,4 @@ Interactive Telegram bot to run Brainfuck code.
 ```
 
 ## Test it!
-The bot is (sometimes) up and running. Try it yourself: [@BrainfuckRobot](https://telegram.me/BrainfuckRobot)
+The bot is (probably not) up and running. Try it yourself: [@BrainfuckRobot](https://telegram.me/BrainfuckRobot)
