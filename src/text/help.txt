@@ -5,4 +5,4 @@ Send me some brainfuck code and I will send you the output.
 /brainfuck: Get basic info on how brainfuck works.
 /minify: Minify brainfuck code that contains comments.
 /run: Execute your brainfuck code. E.g.: /run ++++.--.
-/debug: Debug your brainfuck code. Returns the values of the pointers after executing the code. E.g.: /debug ++++.--.
+/debug: Debug your brainfuck code. Returns the values of the pointers instead of ASCII characters. E.g.: /debug ++++.--.
