@@ -4,7 +4,7 @@ console.log("#############################");
 console.log("Brainfuck Telegram Bot Server");
 console.log("#############################\n");
 
-const teleBot = require('teleBot');
+const teleBot = require('TeleBot');
 const brainfuck = require('brainfuck-javascript');
 const fs = require('fs');
 
