@@ -4,15 +4,16 @@ Interactive Telegram bot to run Brainfuck code.
 ## Test it!
 The bot is up and running. Try it yourself: [@BrainfuckRobot](https://telegram.me/BrainfuckRobot)
 
+
 ## Run the bot locally for debugging
 * Clone this repository to any location on your computer.
 * Install nodejs
 * Get the telegram bot token from the [@BotFather](https://telegram.me/BotFather) and paste it in a file called 'telegram_token.secret' in the root folder of the repo.
+* Open the node console and navigate to the folder that contains the repo.
 * Download the required node packages:
 ```
   npm update
 ```
-* Open the node console and navigate to the folder that contains the repo.
 * Start the bot with the following command:
 ```
   node src/main.js
